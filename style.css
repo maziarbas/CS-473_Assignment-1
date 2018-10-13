@@ -1,3 +1,5 @@
+/* Create style for html elements  */
+/* Create style for Body  */
 body {
   background: white;
   font-family: nyt-franklin, Helvetica, sans-serif, Arial;
@@ -13,7 +15,7 @@ ul {
   vertical-align: middle;
   padding-left: 15px;
   padding-right: 15px;
-  background-color:#FFFFFF;
+  background-color: #FFFFFF;
   z-index: 10px;
   display: block;
 }
@@ -24,18 +26,18 @@ li {
   display: inline;
 }
 
-a{
-  color:blue;
+a {
+  color: #2c80e6;
   cursor: pointer;
 }
-div{
+
+div {
   display: block;
   z-index: -1px;
 }
-p{
-  z-index: -1px;
-}
 
+/* CLASSES  */
+/* used for fixed generalpromotional menus on top  */
 .promotion-menue {
   background-color: black;
   font-family: nyt-franklin;
@@ -47,6 +49,7 @@ p{
   margin-bottom: 2px;
 }
 
+/* used for fixed navigation box  */
 .nav-bar {
   line-height: 20px;
   width: auto;
@@ -55,6 +58,7 @@ p{
   z-index: 6px;
 }
 
+/* used for fixed navigation box  */
 .nav-bar-fixed {
   display: block;
   position: fixed;
@@ -62,6 +66,7 @@ p{
   width: 100%;
   top: 0;
   background-color: #FFFFFF;
+  z-index: 200;
 }
 
 /* Create three equal columns that floats next to each other */
@@ -108,6 +113,7 @@ p{
   line-height: 0px;
 }
 
+/* used button styling   */
 .btn {
   color: white;
   text-decoration: none;
@@ -117,10 +123,12 @@ p{
   cursor: pointer;
 }
 
+/* used for unerlining on a hover   */
 .underline-on-hover:hover {
   text-decoration: underline;
 }
 
+/* used for showing pointer on a link   */
 .finger-on-hover:hover {
   cursor: pointer;
 }
@@ -128,39 +136,71 @@ p{
 .small-declarations {
   font-size: 11px;
   color: black;
-  }
+}
 
+/* used for grey boxes for subscription above faq   */
 .wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 10px;
   row-gap: 1em;
 }
-.low-page-boxes{
-padding: 10px;
-height: 85px;
-background-color:#c8c8c8;
-font-size:11px;
+
+/* used for footer box  */
+.container {
+  position: relative;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  top: 1300;
+  height: 169px;
+  width: 100%;
+  69 margin-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 40px;
 }
 
-.faq-head{
-  top:1250px;
+/* used for footer box  */
+.wrapper-2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 100px;
+  font-size: 10px;
+  align-items: top;
+  align-content: center;
+}
+
+/* class for boxes on the lower part of the page   */
+.low-page-boxes {
+  padding: 10px;
+  height: 85px;
+  background-color: #c8c8c8;
+  font-size: 11px;
+}
+
+/* class for faq headline  */
+.faq-head {
+  top: 1250px;
   position: relative;
   font-size: 14px;
-  color:black;
-  font-weight:bold;
+  color: black;
+  font-weight: bold;
   margin-left: 21%;
-  }
+}
 
-  .faq{
-    top:auto;
-    position: relative;
-    font-size: 11px;
-    color:blue;
-    font-weight:normal;
+/* class for faq content  */
+.faq {
+  top: auto;
+  position: relative;
+  font-size: 11px;
+  color: #2c80e6;
+  font-weight: normal;
+}
 
-    }
-
+/* SELECTOR  */
+/* logo style   */
 #logo {
   height: 40px;
   width: auto;
@@ -168,6 +208,7 @@ font-size:11px;
   padding-right: 200px;
 }
 
+/* promotion box red box  style   */
 #red-box {
   width: auto;
   background-color: #ff6364;
@@ -195,6 +236,7 @@ font-size:11px;
   line-height: 0px;
 }
 
+/* texbox style for yellow text  style   */
 #yellow-text {
   font-size: 24px;
   color: FEFE74;
@@ -203,24 +245,28 @@ font-size:11px;
   line-height: 0px;
 }
 
+/* mid page promotion box  style   */
 #blue-col-box {
   background-color: #2D84ED;
   border-radius: 5px;
   height: 150px;
 }
 
+/* mid page promotion box  style   */
 #darkblue-col-box {
   background-color: #104A93;
   border-radius: 5px;
   height: 150px;
 }
 
+/* mid page promotion box  style   */
 #dark-col-box {
   background-color: #2C2C2C;
   border-radius: 5px;
   height: 150px;
 }
 
+/* mid page promotion box button style   */
 #black-inside-col-box {
   background-color: rgb(150, 150, 150);
   border-radius: 5px;
@@ -229,6 +275,7 @@ font-size:11px;
   justify-content: center;
 }
 
+/* mid page promotion box button style   */
 #blue-inside-col-box {
   background-color: rgb(151, 194, 245);
   border-radius: 5px;
@@ -237,6 +284,7 @@ font-size:11px;
   justify-content: center;
 }
 
+/* mid page promotion box button style   */
 #darkblue-inside-col-box {
   background-color: rgb(135, 165, 201);
   border-radius: 5px;
@@ -245,6 +293,7 @@ font-size:11px;
   justify-content: center;
 }
 
+/* mid page red bonus box   */
 #bonus-box {
   background-color: red;
   font-size: 12px;
@@ -253,6 +302,7 @@ font-size:11px;
   border-radius: 1px;
 }
 
+/* mid page disclaimer box style   */
 #disclaimer-2 {
   position: relative;
   top: 1150px;
@@ -261,6 +311,7 @@ font-size:11px;
   margin-right: 21%;
 }
 
+/* mid page disclaimer box style   */
 #disclaimer-3 {
   position: relative;
   top: 1150px;
@@ -269,7 +320,16 @@ font-size:11px;
   margin-right: 21%;
 }
 
-#bottom-position{
+#bottom-position {
   position: relative;
-  bottom:3px;
+  bottom: 3px;
+}
+
+/* button under genereal faq questions style   */
+#faq-button {
+  background: #2c80e6;
+  color: white;
+  font-weight: bold;
+  border-radius: 3px;
+  border: none;
 }
